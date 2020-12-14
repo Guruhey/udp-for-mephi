@@ -4,7 +4,7 @@ import socket
 for pings in range(10):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     client_socket.settimeout(1.0)
-    message = b'badum TSSSSS'
+    message = b'badum TSSSSSSS'
     addr = ("127.0.0.1", 2077)
 
     start = time.time()
