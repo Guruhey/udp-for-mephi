@@ -1,12 +1,14 @@
 import time
 import socket
+import os
+# imports
 
 for pings in range(10):
+    # for cycle
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     client_socket.settimeout(1.0)
-    message = b'badum TSSSSSSS'
+    message = b'badum TSSSSSSSSS'
     addr = ("127.0.0.1", 2077)
-
     start = time.time()
     client_socket.sendto(message, addr)
     try:
